@@ -11,9 +11,9 @@ const Navbar = () => {
       </div>
       <div className="flex-none gap-2">
         {user && (
-          <div className="dropdown dropdown-end mx-5 flex ">
-            <div className="form-control "></div>
-            <p className="my-4">Welcome, {user.firstName}</p>
+          <div className="dropdown dropdown-end mx-5 flex  ">
+            <div className="form-control  "></div>
+            <p className="my-3 mx-4">Welcome, {user.firstName}</p>
 
             <div
               tabIndex={0}

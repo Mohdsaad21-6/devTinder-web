@@ -23,6 +23,7 @@ const Login = () => {
         },
         { withCredentials: true }
       );
+      //res.data was a payload that go to userSlice and the addUser reducer will update the state...
       dispatch(addUser(res.data));
       return navigate("/");
     } catch (error) {

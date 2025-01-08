@@ -1,13 +1,15 @@
 import { useSelector } from "react-redux";
-import ProfileEditrofileEdit from "./profileEdit";
+import ProfileEdit from "./profileEdit";
 
 const Profile = () => {
-  const user = useSelector((store) => structuredClone.user);
+  const user = useSelector((store) => store.user);
   return (
-    <div>
-      Profile Section
-      <ProfileEditrofileEdit />
-    </div>
+    
+    user && (
+      <div >
+        <ProfileEdit user={user} />
+      </div>
+    )
   );
 };
 

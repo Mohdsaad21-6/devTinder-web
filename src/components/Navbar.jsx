@@ -7,30 +7,29 @@ import { removeUser } from "../utils/userSlice";
 const Navbar = () => {
   const user = useSelector((store) => store.user);
 
-  const dispatch=useDispatch()
+  const dispatch = useDispatch();
 
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
-  const handleLogout = async() => {
+  const handleLogout = async () => {
     try {
-    await  axios.post(
+      await axios.post(
         BASE_URL + "/logout",
         {},
         {
           withCredentials: true,
-        },
-       
+        }
       );
-    dispatch(removeUser());
+      dispatch(removeUser());
 
-    return  navigate("/login")
+      return navigate("/login");
     } catch (error) {
       console.log(error);
       //redirect to error page
     }
   };
   return (
-    <div className="navbar bg-base-300">
+    <div className="navbar bg-base-300 fixed top-0 z-10">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-xl">
           👨🏻‍💻 DevTinder 👨🏻‍💻

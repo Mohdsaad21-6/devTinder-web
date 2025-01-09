@@ -9,7 +9,7 @@ const Login = () => {
   const [emailId, setEmailId] = useState("");
   const [password, setPassword] = useState("");
 
- const [error,setError]= useState("")
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
@@ -55,12 +55,12 @@ const Login = () => {
               </div>
               <input
                 value={password}
-                type="text"
+                type="password"
                 onChange={(e) => setPassword(e.target.value)}
                 className="input input-bordered w-full max-w-xs"
               />
             </label>
-            
+               
           </div>
           <p className="text-red-500">{error}</p>
 

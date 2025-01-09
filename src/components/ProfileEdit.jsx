@@ -45,7 +45,7 @@ const ProfileEdit = ({ user }) => {
 
   return (
     <>
-      <div className="flex justify-center my-20">
+      <div className="flex justify-center my-20 ">
         <div className="flex justify-center mx-10 ">
           <div className="card bg-base-300 w-96 shadow-xl h-auto">
             <div className="card-body p-4">

@@ -30,13 +30,13 @@ const Connections = () => {
   if (connections.length === 0) return <h1 className="my-20">No Connections!!!</h1>;
 
   return (
-    <div className="text-center my-10">
+    <div className="text-center my-20">
       <h1 className="text-bold text-white text-3xl">Connections</h1>
       {connections.map((connection) => {
-        const { firstName, lastName, photoUrl, age, gender, about,emailId } =
+        const { firstName, lastName, photoUrl, age, gender, about,_id } =
           connection;
         return (
-          <div key={emailId} className=" flex m-4 p-4 rounded-lg bg-base-300 w-1/2 mx-auto">
+          <div key={_id} className=" flex m-4 p-4 rounded-lg bg-base-300 w-1/2 mx-auto">
             <div>
               <img
                 alt="photo"

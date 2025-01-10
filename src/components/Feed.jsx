@@ -25,9 +25,17 @@ const Feed = () => {
     getFeed();
   }, []);
 
-  return feed &&( <div className="flex justify-center my-24" >
-    <UserCard user={feed[0]}/>
-  </div>)
+  if (!feed) return;
+
+  if (feed.length <= 0) return <h1 className="flex justify-center my-20 text-2xl">All Caught!!!</h1>;
+
+  return (
+    feed && (
+      <div className="flex justify-center my-24">
+        <UserCard user={feed[0]} />
+      </div>
+    )
+  );
   // feed && <UserCard user={feed[0]} />;
 };
 

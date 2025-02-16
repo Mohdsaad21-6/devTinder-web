@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
 
-const ProfileEdit = ({ user }) => {
+const EditProfile = ({ user }) => {
   const [firstName, setFirstName] = useState(user.firstName);
   const [lastName, setlastName] = useState(user.lastName);
   const [photoUrl, setPhotoUrl] = useState(user.photoUrl);
@@ -147,4 +147,4 @@ const ProfileEdit = ({ user }) => {
   );
 };
 
-export default ProfileEdit;
+export default EditProfile;

@@ -7,6 +7,10 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Connections from "./components/Connections";
 import Requests from "./components/Requests";
+import TandC from "./components/TandC";
+import Contact from "./components/Contact";
+import Privacy from "./components/Privacy";
+import Refund from "./components/refund";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
               <Route path="connections" element={<Connections />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/request" element={<Requests />} />
+              <Route path="/tandc" element={<TandC />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/refunds" element={<Refund/>} />
             </Route>
           </Routes>
         </BrowserRouter>

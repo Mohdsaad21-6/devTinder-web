@@ -1,4 +1,4 @@
-const Refund = () => {
+const Moneyback = () => {
   return (
     <div className="bg-base-300 p-8 mt-16">
       <h1 className="text-3xl font-bold mb-4">
@@ -11,7 +11,7 @@ const Refund = () => {
       </h2>
       <p className="mb-4">
         You may cancel your subscription or course enrollment within 7 days for
-        a full refund. Contact us at{" "}
+        a full refund. Contact us at 8081954303
         <a
           href="shaadansari8081@gmail.com"
           className="text-blue-600 hover:underline"
@@ -56,4 +56,4 @@ const Refund = () => {
   );
 };
 
-export default Refund;
+export default Moneyback;

@@ -70,7 +70,7 @@ const Footer = () => {
         <Link to="/contact" className="link link-hover">
           Contact Us
         </Link>
-        <Link to="/refund" className="link link-hover">Cancellation and refund</Link>
+        <Link to="/moneyback" className="link link-hover">Cancellation and refund</Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">

@@ -27,7 +27,7 @@ function App() {
               <Route path="/tandc" element={<TandC />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
-              <Route path="/refunds" element={<Refund/>} />
+              <Route path="/refund" element={<Refund/>} />
             </Route>
           </Routes>
         </BrowserRouter>

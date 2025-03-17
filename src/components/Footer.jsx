@@ -66,11 +66,11 @@ const Footer = () => {
         <Link to="/tandc" className="link link-hover">
           Terms & Conditions
         </Link>
-        <Link to="privacy" className="link link-hover">Privacy Policy</Link>
+        <Link to="/privacy" className="link link-hover">Privacy Policy</Link>
         <Link to="/contact" className="link link-hover">
           Contact Us
         </Link>
-        <Link to="refunds" className="link link-hover">Cancellation and refund</Link>
+        <Link to="/refund" className="link link-hover">Cancellation and refund</Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">

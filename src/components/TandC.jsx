@@ -121,16 +121,12 @@ const TandC = () => {
         <h2 className="text-2xl font-semibold mt-6 mb-2">
           7. RETURNS AND REFUNDS
         </h2>
+        
         <p className="mb-4">
-          7.1 If you are not satisfied with any products or services purchased
-          through the Website, you may return them within [TIMEFRAME] for a full
-          refund.
+          7.1 To initiate a return, please contact us at [8081954303].
         </p>
         <p className="mb-4">
-          7.2 To initiate a return, please contact us at [CONTACT INFORMATION].
-        </p>
-        <p className="mb-4">
-          7.3 We reserve the right to modify our return and refund policies at
+          7.2 We reserve the right to modify our return and refund policies at
           any time without notice.
         </p>
         <h2 className="text-2xl font-semibold mt-6 mb-2">
@@ -190,13 +186,9 @@ const TandC = () => {
         <h2 className="text-2xl font-semibold mt-6 mb-2">12. GOVERNING LAW</h2>
         <p className="mb-4">
           12.1 These Terms shall be governed by and construed in accordance with
-          the laws of [STATE/COUNTRY].
+          the laws of [UP/INDIA].
         </p>
-        <p className="mb-4">
-          12.2 Any disputes arising from these Terms shall be resolved through
-          binding arbitration in accordance with the rules of the [ARBITRATION
-          ASSOCIATION].
-        </p>
+        
         <h2 className="text-2xl font-semibold mt-6 mb-2">
           13. CHANGES TO TERMS
         </h2>

@@ -11,6 +11,7 @@ import TandC from "./components/TandC";
 import Contact from "./components/Contact";
 import Privacy from "./components/Privacy";
 import Moneyback from "./components/Moneyback";
+import Premuim from "./components/Premuim";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/moneyback" element={<Moneyback/>} />
+              <Route path="/premuim" element={<Premuim/>} />
             </Route>
           </Routes>
         </BrowserRouter>

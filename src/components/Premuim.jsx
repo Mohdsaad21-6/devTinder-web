@@ -11,7 +11,7 @@ const Premuim = () => {
 
 
   const verifypremiumUser = async () => {
-    const res = await axios.post(
+    const res = await axios.get(
       BASE_URL + "/premium/verify",
       { withCredentials: true }
     );

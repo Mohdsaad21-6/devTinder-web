@@ -1,9 +1,14 @@
 import axios from "axios";
 import { BASE_URL } from "../utils/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Premuim = () => {
   const [isUserPremium, setIsUserPremium] = useState(false);
+
+  useEffect(()=>{
+    verifypremiumUser();
+  },[])
+
 
   const verifypremiumUser = async () => {
     const res = await axios.post(

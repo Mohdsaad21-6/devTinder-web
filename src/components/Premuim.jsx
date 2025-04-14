@@ -1,7 +1,20 @@
 import axios from "axios";
 import { BASE_URL } from "../utils/constants";
+import { useState } from "react";
 
 const Premuim = () => {
+  const [isUserPremium, setIsUserPremium] = useState(false);
+
+  const verifypremiumUser = async () => {
+    const res = await axios.post(
+      BASE_URL + "/premium/verify",
+      { withCredentials: true }
+    );
+    if (res.data.isPremium) {
+      setIsUserPremium(true);
+    }
+  };
+
   const handleBuyClick = async (type) => {
     const order = await axios.post(
       BASE_URL + "/payment/create",
@@ -11,15 +24,17 @@ const Premuim = () => {
       { withCredentials: true }
     );
 
-    const {amount, currency,keyId,notes,orderId} = order.data;
+    const { amount, currency, keyId, notes, orderId } = order.data;
+
+    //open razorpay payment dialog box
 
     const options = {
       key: keyId, // Replace with your Razorpay key_id
       amount,
       currency,
-      name:" Dev Tinder",
+      name: " Dev Tinder",
       description: "Connect to another developer",
-      order_id: orderId,     
+      order_id: orderId,
       prefill: {
         name: notes.firstName + " " + notes.lastName,
         email: notes.email,
@@ -28,6 +43,7 @@ const Premuim = () => {
       theme: {
         color: "#F37254",
       },
+      handler: verifypremiumUser,
     };
 
     const rzp = new window.Razorpay(options);
@@ -35,7 +51,9 @@ const Premuim = () => {
   };
 
   //it should open a razorpay payment dialogbox
-  return (
+  return isUserPremium ? (
+    <h1> You are already a premium user</h1>
+  ) : (
     <div className="mt-36">
       <div className="flex w-full">
         <div className="card bg-base-300 rounded-box grid h-80 grow place-items-center">

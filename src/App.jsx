@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import Privacy from "./components/Privacy";
 import Moneyback from "./components/Moneyback";
 import Premuim from "./components/Premuim";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
               <Route path="/tandc" element={<TandC />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
-              <Route path="/moneyback" element={<Moneyback/>} />
-              <Route path="/premuim" element={<Premuim/>} />
+              <Route path="/moneyback" element={<Moneyback />} />
+              <Route path="/premuim" element={<Premuim />} />
+              <Route path="/chat/:targetUserId" element={<Chat />} />
             </Route>
           </Routes>
         </BrowserRouter>

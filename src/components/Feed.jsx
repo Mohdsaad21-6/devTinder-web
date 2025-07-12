@@ -27,7 +27,7 @@ const Feed = () => {
 
   if (!feed) return;
 
-  if (feed.length <= 0) return <h1 className="flex justify-center my-20 text-2xl">All Caught!!!</h1>;
+  if (feed.length <= 0) return <h1 className="flex justify-center align-middle my-48 text-2xl">All Caught!!!</h1>;
 
   return (
     feed && (

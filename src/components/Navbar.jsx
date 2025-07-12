@@ -33,14 +33,14 @@ const Navbar = () => {
     <div className="navbar bg-base-300 fixed top-0 z-10">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-xl">
-          👨🏻‍💻 Devtinder Code 👨🏻‍💻
+          👨🏻‍💻 Devtinder Code 
         </Link>
       </div>
       <div className="flex-none gap-2">
         {user && (
           <div className="dropdown dropdown-end mx-5 flex  ">
             <div className="form-control  "></div>
-            <p className="my-3 mx-4">Welcome, {user.firstName}</p>
+            <p className="my-3 mx-4 hidden md:block">Welcome, {user.firstName}</p>
 
             <div
               tabIndex={0}

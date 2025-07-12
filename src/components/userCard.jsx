@@ -23,24 +23,27 @@ const UserCard = ({ user }) => {
   };
 
   return (
-    <div className="card bg-base-300 w-1/4 shadow-xl ">
+    <div className="card bg-base-300 w-full md:w-1/4 shadow-xl px-4 md:px-0 mx-2 md:mx-0">
       <figure>
-        <img className="h-88" src={photoUrl} alt="photo" />
+        <img className="h-80 md:h-88 w-full object-cover" src={photoUrl} alt="photo" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}</h2>
         {age && gender && <p>{age + ", " + gender}</p>}
         <p>{about}</p>
-        <div className="card-actions justify-center my-4">
+        <div className="card-actions justify-center my-4 flex flex-col md:flex-row gap-2">
           <button
-            className="btn btn-primary"
-            onClick={() => handleSendRequest("ignored",_id)}
+            className="btn btn-primary w-full md:w-auto"
+            onClick={() => handleSendRequest("ignored", _id)}
           >
             Ignore
           </button>
-          <button 
-          onClick={() => handleSendRequest("interested",_id)}
-          className="btn btn-secondary">Interested</button>
+          <button
+            onClick={() => handleSendRequest("interested", _id)}
+            className="btn btn-secondary w-full md:w-auto"
+          >
+            Interested
+          </button>
         </div>
       </div>
     </div>

@@ -111,7 +111,7 @@ const Footer = () => {
       </nav>
       <aside>
         <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by DevTinderCode
+          Copyright © {new Date().getFullYear()} - All right reserved by Mohd Saad
         </p>
       </aside>
     </footer>

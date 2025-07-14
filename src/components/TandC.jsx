@@ -41,7 +41,7 @@ const TandC = () => {
           3. USE OF THE WEBSITE
         </h2>
         <p className="mb-4">
-          3.1 You must be at least 18 years old to use the Website.
+          3.1 You must be at least 19 years old to use the Website.
         </p>
         <p className="mb-4">
           3.2 You agree to use the Website for lawful purposes only and in
